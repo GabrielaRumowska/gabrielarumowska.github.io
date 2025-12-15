@@ -1,1 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Zadanie1">
+	<title>Zadanie1</title>
+	<link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon">
+</head>
 
+<body style="background-color:#F8F4FA; color:#000000">
+<p style="text-align: right;"> <a href="https://gabrielarumowska.github.io" title="Powrót do strony głównej" style="font-family: 'Verdana'; font-size: 14px; color: #8B008B;">Powrót do strony głównej</a> </p>
+
+<span style="font-family: 'Georgia'; font-size: 22px; color: #8B008B;"><h1><b> Złożoności algorytmów </b></h1></span>
+<hr style="border: none; height: 3px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
+<p><u>Analiza złożoności algorytmów</u> pozwala na porównanie różnych <sup>algorytmów</sup> i wybranie najbardziej odpowiedniego. 
+Zwłaszcza w przypadku pracy z dużymi zbiorami danych nawet <sub>niewielka różnica</sub> w złożoności może mieć znaczący wpływ na czas wykonania algorytmów. 
+Jest to szczególnie ważne w przypadku projektów z ograniczeniami czasowymi lub aplikacji działających w czasie rzeczywistym.<br></p>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 20px; color: #800080;"><h2><b> Rodzaje złożoności </b></h2></span>
+<dl>
+  <dt><b><i>Czasowa złożoność obliczeniowa</i></b></dt>
+  <dd><b>Określa, ile czasu potrzebuje algorytm na wykonanie swoich operacji w zależności od rozmiaru wejścia. Wyrażana jest za pomocą notacji O.</dd>
+  <dt><b><i>Pamięciowa złożoność obliczeniowa</i></b></dt>
+  <dd><b>Określa, ile pamięci potrzebuje algorytm podczas działania. Tak jak złożoność czasowa, jest wyrażana za pomocą notacji O.</dd>
+</dl>
+</span><br>
+
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
+<span style="font-family: 'Georgia'; font-size: 20px; color: #800080;"><h3><b> Rodzaje analizy złożoności </b></h3></span>
+<ul style="list-style-type: square;">
+  <li> <b>Optymistyczna</b>  -Najlepszy przypadek. Najszybszy możliwy czas wykonania algorytmu.</li>
+  <li> <b>Średnia</b>  -Średni przypadek. Czas wykonania algorytmu dla typowych danych wejściowych.</li>
+  <li> <b>Pesymistyczna</b>  -Najgorszy przypadek. Najwolniejszy możliwy czas wykonania algorytmu. Jest najczęściej analizowana.</li>
+</ul>
+</span><br>
+
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
+<span style="font-family: 'Georgia'; font-size: 20px; color: #800080;"><h3><b> Klasy złożoności </b></h3></span>
+<ol type="A">
+  <li><b>O(1) Stała</b>  -Czas wykonania algorytmu jest niezależny od rozmiaru danych wejściowych.</li> 
+  <li><b>O(log n) Logarytmiczna</b>  -Czas wykonania algorytmu rośnie logarytmicznie wraz z rozmiarem danych wejściowych.</li> 
+  <li><b>O(n) Liniowa</b>  -Czas wykonania algorytmu rośnie liniowo wraz z rozmiarem danych wejściowych.</li> 
+  <li><b>O(n log n) Liniowo-logarytmiczna</b>  -Czas wykonania algorytmu rośnie w tempie n log n.</li> 
+  <li><b>O(n^2) Kwadratowa</b> -Czas wykonania algorytmu rośnie kwadratowo wraz z rozmiarem danych wejściowych.</li> 
+  <li><b>O(n^3) Sześcienna</b> -Czas wykonania algorytmu rośnie sześciennie wraz z rozmiarem danych wejściowych.</li> 
+  <li><b>O(2^n) Wykładnicza</b> -Czas wykonania algorytmu rośnie wykładniczo wraz z rozmiarem danych wejściowych.</li> 
+  <li><b>O(n!) Silniowa</b> -Czas wykonania algorytmu rośnie silniowo wraz z rozmiarem danych wejściowych.</li> 
+</ol>
+</span><br>
+
+
+<table style="table-layout: fixed; border-collapse: collapse; border-color:#8B008B; text-align: center; color: #8B008B; border="3"; 
+border-style: solid; border-color: rgb(116, 12, 172); width: 70%;>
+        <tr>
+			<th style="background-color: #DDA0DD;"> Notacja złożoności</th>
+            <th colspan="2" style="background-color: #DDA0DD;"> Wyjaśnienie i Przykładowy algorytm</th>
+        </tr>
+        <tr>
+            <td>O(1)</td>
+            <td>Stała złożoność czasowa. </td>
+            <td>Uzyskiwanie dostępu do elementu tablicy o określonym indeksie.</td>
+        </tr>
+        <tr>
+            <td>O(log n)</td>
+            <td>Złożoność logarytmiczna. </td>
+            <td>Algorytm wyszukiwania binarnego.</td>
+        </tr>
+        <tr>
+            <td>0(n)</td>
+            <td>Złożoność liniowa. </td>
+            <td>Przeszukiwanie wszystkich elementów tablicy, jeden po drugim.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">O(n log n)</td>
+            <td rowspan="2">Złożoność Liniowo-logarytmiczna.</td>
+            <td>Sortowanie przez scalanie (Merge Sort).</td>
+        </tr>
+            <td>Sortowanie szybkie (Quicksort).</td>
+        </tr>
+        <tr>
+			<td>O(n^2)</td>
+            <td>Złożoność kwadratowa. </td>
+			<td>Sortowanie bąbelkowe (Bubble Sort).</td>
+        </tr>
+    </table> 
+
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<p style="text-align: center"> 
+<span style="font-family: 'Georgia'; font-size: 14px; color: #84106E;"> Wykorzystane materiały: </span><br> 
+<a href="https://www.hostragons.com/pl/blogu/zlozonosc-algorytmu-notacja-big-o-i-optymalizacja-algorytmu/" title="Artykuł" target="_blank" style="font-family: 'Georgia'; font-size: 12px; color: #84106E;">Artykuł1</a> <br>
+</p>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+
+</body>
+</html>
