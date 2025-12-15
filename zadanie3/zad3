@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Zadanie3">
+	<title>Zadanie3</title>
+	<link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon">
+	<style>
+		.obrazek {float: left; width: 50%; margin: 10 20 10px 10px;}
+	</style>
+</head>
+
+<body style="background-color:#F8F4FA; color:#000000">
+<p style="text-align: right;"> <a href="https://gabrielarumowska.github.io" title="Powrót do strony głównej" style="font-family: 'Georgia'; font-size: 14px; color: #8B008B;">Powrót do strony głównej</a> </p>
+
+<span style="font-family: 'Georgia'; font-size: 22px; color: #8B008B;"><h1><b> Iteracyjna i rekurencyjna funkcja silni </b></h1></span>
+<span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
+
+<img src="silnia.jpg" class="obrazek">
+
+<span style="font-family: 'Georgia'; font-size: 20px; color: #800080;">
+<dl><dt><b><i> Silnia </i></b></dt></span>
+<dd>Oznaczana za pomocą symbolu n! Jest to iloczyn wszystkich liczb naturalnych od 1 do n, gdzie 0!=1.<br> 
+Jej zastosowania są szerokie. Używana jest do obliczania permutacji i kombinacji 
+oraz wykorzystywana w analizie asymptotycznej, rozwinięciach szeregów.</dd></dl>
+<p>
+<b><i>Iteracyjna funkcja silni</b></i>- to sposób obliczania silni za pomocą pętli.
+Funkcja przyjmuje argument n, będący liczbą, dla której chcemy obliczyć silnię. Zmienna wynik przyjmuje wartość początkową 1, przechowuje obliczaną silnię.
+W każdej iteracji pętli mnożona jest aktualna wartość zmiennej wynik przez zmienną i. Po zakończeniu pętli, funkcja zwraca obliczony wynik.<br><br>
+<b><i>Rekurencyjna funkcja silni</b></i>- to sposób obliczania silni za pomocą funkcji wywołującej samą siebie.
+Funkcja przyjmuje argument n, będący liczbą, dla której chcemy obliczyć silnię. Jeśli n jest równe 0 lub 1, funkcja zwraca wartość 1.
+W przeciwnym razie funkcja silnia jest wywoływana dla argumentów n-1, aż do osiągnięcia warunku podstawowego. Funkcja zwraca obliczony wynik.<br>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 20px; color: #800080;">
+<h4><b><i> Złożoność obliczeniowa</i></b></h4></span> Złożoność algorytmów liczących silnię to <b>O(n)- złożoność liniowa,</b><br> zarówno <b><u>iteracyjnego</u></b> (jedna pętla wykonująca się n razy) 
+<br>jak i <b><u>rekurencyjnego</u></b> (n wywołań funkcji silnia).<br></p></span>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<span style="font-family: 'Georgia'; font-size: 20px; color: #8B008B;"> <h3>Omówienie</h3> </span>
+<audio controls>
+		<source src="silnia.mp3" type="audio/mpeg">
+		Twoja przeglądarka nie obsługuje audio.
+</audio> <br>
+<span style="font-family: 'Georgia'; font-size: 20px; color: #8B008B;"> <h3>Wykonanie</h3> </span>
+<video width="640" height="360" controls>
+		<source src="silnia.mp4" type="video/mp4">
+		Twoja przeglądarka nie obsługuje wideo.
+</video>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+<p style="text-align: center"> 
+<span style="font-family: 'Georgia'; font-size: 14px; color: #84106E;"> Wykorzystane materiały: </span><br> 
+<a href="https://www.korepetycjezinformatyki.pl/silnia/" title="Artykuł" target="_blank" style="font-family: 'Georgia'; font-size: 12px; color: #84106E;">Artykuł</a> <br>
+</p>
+<hr style="border: none; height: 2px; background-color: #8B008B;">
+
+</body>
+</html>
