@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Zadanie3">
 	<title>Zadanie3</title>
-	<link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon"> 
 	<style>
 		.obrazek {float: left; width: 50%; margin: 10 20 10px 10px;}
 	</style>
