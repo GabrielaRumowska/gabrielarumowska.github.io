@@ -3,18 +3,18 @@
   <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />  
   <title>Zadanie - kalkulator i BMI</title>
 </head>
-<body>
+<body style="background-color:#F8F4FA; color:#000000">
+<span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
 <script language="JavaScript">
 
 function dodawanie() {
-/* Odwołanie do formularza i jego elementów przez nazwę*/
 var skl1=parseFloat(document.Form.a.value);
 var skl2=parseFloat(document.Form.b.value);
 var wynik = skl1+skl2;
 alert(wynik);
 }
 </script>
-<form name="Form">
+<form name="Dodawanie">
 a=<input type="Text" name="a"><br>
 b=<input type="Text" name="b"><br>
 <input type="Button" value="Oblicz sumę" onclick="dodawanie()">
@@ -23,19 +23,15 @@ b=<input type="Text" name="b"><br>
 
 <script language="JavaScript">
 function odejmowanie() {
-/* Odwołanie do formularza i jego elementów przez indeks
-Formularz o nazwie jakas_wymyslona_nazwa1 jest drugim formularzem w dokumencie więc ma indeks równy 1
-Pole tekstowe o nazwie jakas_wymyslona_nazwa2 jest pierwszym elementem formularza więc ma indeks równy 0
-*/
 var skl1=parseFloat(document.forms[1].elements[0].value);
 var skl2=parseFloat(document.forms[1].elements[1].value);
 var wynik = skl1-skl2;
 alert(wynik);
 }
 </script>
-<form name="jakas_wymyslona_nazwa1">
-a=<input type="Text" name="jakas_wymyslona_nazwa2"><br>
-b=<input type="Text" name="jakas_wymyslona_nazwa3"><br>
+<form name="Odejmowanie">
+a=<input type="Text" name="liczba_a"><br>
+b=<input type="Text" name="liczba_b"><br>
 <input type="Button" value="Oblicz różnicę" onclick="odejmowanie()">
 </form>
 <hr>
@@ -87,21 +83,21 @@ Podaj masę ciała w kilogramach:<input type="Text" name="masa"><br>
 Podaj wzrost w metrach:<input type="Text" name="wzrost"><br>
 <input type="Button" value="Oblicz wskaźnik BMI" onclick="BMI()">
 </form>
-<hr><br>
+<hr>
 
 <form>
 Podaj imię:<input type="Text" name="imię"><br>
-Podaj hasło:<input type="Password" name="hasło"><br>
-Podaj ulubione owoce:<br><input type="checkbox" name="owoce" value="wartość" checked> Jabłko<br>
+<br>Podaj hasło:<input type="Password" name="hasło"><br>
+<br>Podaj ulubione owoce:<br><input type="checkbox" name="owoce" value="wartość" checked> Jabłko<br>
 <input type="checkbox" name="owoce" value="wartość"> Gruszka<br>
 <input type="checkbox" name="owoce" value="wartość"> Truskawka<br>
 <input type="checkbox" name="owoce" value="wartość"> Śliwka<br>
-Wybierz kolor: <br><input type="radio" name="kolory" value="biał"> Biały<br>
+<br>Wybierz kolor: <br><input type="radio" name="kolory" value="biał"> Biały<br>
 <input type="radio" name="kolory" value="czar"> Czarny<br>
 <input type="radio" name="kolory" value="czer"> Czerwony<br>
 <input type="radio" name="kolory" value="nieb"> Niebieski<br>
 <input type="radio" name="kolory" value="żółt"> Zółty<br>
-Wybierz ulubiony przedmiot: 
+<br>Wybierz ulubiony przedmiot: 
 <br><select name="przedmioty">
 	<option>Matematyka</option>
 	<option>Informatyka</option>
@@ -109,7 +105,7 @@ Wybierz ulubiony przedmiot:
 	<option>Język polski</option>
 </select>
 <input type="Button" value="Wyślij"> 
-
 </form>
+</span>
 </body>
 </html>
