@@ -1,8 +1,21 @@
 <html>
 <head>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">  
   <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />   
   <title>Zadanie - kalkulator i BMI</title>
   <link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon">
+  <script type=text/javascript>
+  function weryfikuj_masa(m){
+  m= Number(m);
+  if (isNaN(m)) alert("Podaj liczbę!");
+  else if (m<=0||m>=200)
+  alert ("Wpisywana masa ciała powinna być większa niż 0kg i mniejsza niż 200kg!");}
+  function weryfikuj_wzrost(w){
+  w= Number(w);
+  if (isNaN(w)) alert("Podaj liczbę!");
+  else if (w<1||w>2.5)
+  alert ("Wpisywany wzrost powinien być większy niż 1m i mniejszy niż 2,5m!");}
+  </script>
 </head>
 <body style="background-color:#F8F4FA; color:#000000">
 <span style="font-family: 'Georgia'; font-size: 18px; color: #7D1B98;">
@@ -75,6 +88,8 @@ b=<input type="Text" name="liczba2"><br>
 function BMI() {
 var skl1=parseFloat(document.forms[4].elements[0].value);
 var skl2=parseFloat(document.forms[4].elements[1].value);
+var posilek = document.forms[4].posilek.value;
+if (posilek === "Tak") skl1=skl1-1;
 var wynik = skl1/(skl2*skl2);
 alert(wynik.toFixed(2));
 if(wynik<18.5) alert('niedowaga');
@@ -84,8 +99,11 @@ else alert('otyłość');
 }
 </script>
 <form name="Wskaźnik BMI">
-Podaj masę ciała w kilogramach:<input type="Text" name="masa"><br>
-Podaj wzrost w metrach:<input type="Text" name="wzrost"><br>
+Podaj masę ciała w kilogramach:<input type="Text" name="masa" onchange="weryfikuj_masa(this.value);">*<br>
+Podaj wzrost w metrach:<input type="Text" name="wzrost" onchange="weryfikuj_wzrost(this.value);">*<br>
+Czy ważyłaś/ważyłeś się tuż po zjedzeniu posiłku? <br><span style="font-size: 12px">(Jeśli tak, to w obliczeniach pod uwagę będzie wzięta masa o 1kg mniejsza.)</span><br>
+<input type="radio" name="posilek" value="Tak"> Tak<br>
+<input type="radio" name="posilek" value="Nie"> Nie<br>
 <input type="Button" value="Oblicz wskaźnik BMI" onclick="BMI()">
 </form>
 <hr style="border: none; height: 2px; background-color: #8B008B;" >
@@ -93,14 +111,16 @@ Podaj wzrost w metrach:<input type="Text" name="wzrost"><br>
 <form>
 Podaj imię:<input type="Text" name="imię"><br>
 <br>Podaj hasło:<input type="Password" name="hasło"><br>
-<br>Podaj ulubione owoce:<br><input type="checkbox" name="owoce" value="ja" checked> Jabłko<br>
+<br>Podaj ulubione owoce:
+<br><input type="checkbox" name="owoce" value="ja" checked> Jabłko<br>
 <input type="checkbox" name="owoce" value="gr"> Gruszka<br>
 <input type="checkbox" name="owoce" value="tr"> Truskawka<br>
 <input type="checkbox" name="owoce" value="sl"> Śliwka<br>
 <input type="checkbox" name="owoce" value="ma"> Malina<br>
 <input type="checkbox" name="owoce" value="wi"> Wiśnia<br>
 <input type="checkbox" name="owoce" value="cz"> Czereśnia<br>
-<br>Wybierz kolor: <br><input type="radio" name="kolory" value="biał"> Biały<br>
+<br>Wybierz kolor: 
+<br><input type="radio" name="kolory" value="biał"> Biały<br>
 <input type="radio" name="kolory" value="czar"> Czarny<br>
 <input type="radio" name="kolory" value="czer"> Czerwony<br>
 <input type="radio" name="kolory" value="nieb"> Niebieski<br>
@@ -113,6 +133,13 @@ Podaj imię:<input type="Text" name="imię"><br>
 	<option>Informatyka</option>
 	<option>Język angielski</option>
 	<option>Język polski</option>
+	<option>Fizyka</option>
+	<option>Wychowanie fizyczne</option>
+	<option>Geografia</option>
+	<option>Historia</option>
+	<option>Chemia</option>
+	<option>Biologia</option>
+	
 </select>
 <input type="Button" value="Wyślij"> 
 </form>
