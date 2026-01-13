@@ -2,6 +2,7 @@
 <head>
   <meta http-equiv="Content-Script-Type" content="text/javascript">  
   <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-2" />   
+  <meta name="description" content="GR">
   <title>Zadanie - kalkulator i BMI</title>
   <link rel="shortcut icon" href="kwiatek.ico" type="image/x-icon">
   <script type=text/javascript>
@@ -111,28 +112,29 @@ Czy ważyłaś/ważyłeś się tuż po zjedzeniu posiłku? <br><span style="font
 <form>
 Podaj imię:<input type="Text" name="imię"><br>
 <br>Podaj hasło:<input type="Password" name="hasło"><br>
-<br>Podaj ulubione owoce:
+<br>Wybierz ulubiony kolor: 
+<br><input type="radio" name="kolory" value="biał"> Czarny<br>
+<input type="radio" name="kolory" value="czar"> Biały<br>
+<input type="radio" name="kolory" value="czer"> Niebieski<br>
+<input type="radio" name="kolory" value="nieb"> Czerwony<br>
+<input type="radio" name="kolory" value="żółt"> Żółty<br>
+<input type="radio" name="kolory" value="sreb"> Złoty<br>
+<input type="radio" name="kolory" value="złot"> Srebrny<br>
+<br>Wybierz ulubione owoce:
 <br><input type="checkbox" name="owoce" value="ja" checked> Jabłko<br>
 <input type="checkbox" name="owoce" value="gr"> Gruszka<br>
-<input type="checkbox" name="owoce" value="tr"> Truskawka<br>
-<input type="checkbox" name="owoce" value="sl"> Śliwka<br>
-<input type="checkbox" name="owoce" value="ma"> Malina<br>
-<input type="checkbox" name="owoce" value="wi"> Wiśnia<br>
 <input type="checkbox" name="owoce" value="cz"> Czereśnia<br>
-<br>Wybierz kolor: 
-<br><input type="radio" name="kolory" value="biał"> Biały<br>
-<input type="radio" name="kolory" value="czar"> Czarny<br>
-<input type="radio" name="kolory" value="czer"> Czerwony<br>
-<input type="radio" name="kolory" value="nieb"> Niebieski<br>
-<input type="radio" name="kolory" value="żółt"> Żółty<br>
-<input type="radio" name="kolory" value="sreb"> Srebrny<br>
-<input type="radio" name="kolory" value="złot"> Złoty<br>
+<input type="checkbox" name="owoce" value="cz" checked> Wiśnia<br>
+<input type="checkbox" name="owoce" value="tr"> Truskawka<br>
+<input type="checkbox" name="owoce" value="ma" checked> Malina<br>
+<input type="checkbox" name="owoce" value="sl"> Śliwka<br>
+<input type="checkbox" name="owoce" value="wi"> Porzeczka<br>
 <br>Wybierz ulubiony przedmiot: 
 <br><select name="przedmioty">
-	<option>Matematyka</option>
 	<option>Informatyka</option>
-	<option>Język angielski</option>
+	<option>Matematyka</option>
 	<option>Język polski</option>
+	<option>Język angielski</option>
 	<option>Fizyka</option>
 	<option>Wychowanie fizyczne</option>
 	<option>Geografia</option>
